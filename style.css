@@ -68,11 +68,11 @@ header .meu-contato button:hover{
 }
 /*  */
 
-/* main */
+/* main animation */
 
 .banner img{
     display: block;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
     animation: balanco 2s ease-in-out infinite;
     filter: brightness(1.2) drop-shadow(0 0 5px #00ff08);
 }
@@ -90,7 +90,16 @@ header .meu-contato button:hover{
 }
 
 
+/*  */
 
+/* main text */
 
-
-
+.banner-text{
+    color: white;
+    float: left;
+    width: 50%;
+    vertical-align: top;
+    margin-left: 60px;
+    margin-top: -450px;
+    text-align: center;
+}
