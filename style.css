@@ -45,7 +45,6 @@ header a:hover{
 
 header nav ul{
     list-style-type: none;
-    
 }
 
 header nav li{
@@ -68,3 +67,30 @@ header .meu-contato button:hover{
     box-shadow: 0px 0px 8px #00ff08;
 }
 /*  */
+
+/* main */
+
+.banner img{
+    display: block;
+    margin: 0 auto;
+    animation: balanco 2s ease-in-out infinite;
+    filter: brightness(1.2) drop-shadow(0 0 5px #00ff08);
+}
+
+.banner{
+    margin-top: -30px;
+}
+@keyframes balanco {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px); /* Ajuste o valor desejado para a altura do balanço */
+    }
+}
+
+
+
+
+
+
