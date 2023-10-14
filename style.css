@@ -1,0 +1,71 @@
+/* estilo geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/*  */
+
+/* header */
+header{
+    padding: 0px;
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.10);
+    transition: .2s;
+}
+
+header nav ul{
+    list-style-type: none;
+    
+}
+header nav li{
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+header .meu-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+header .meu-contato button{
+    box-shadow: 0px 0px 0px #00ff08;
+}
+.logo{
+    max-width: 200px;
+    max-height: 100px;
+}
+/*  */
