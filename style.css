@@ -5,9 +5,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 body{
-    background-color: black;
+    background: black;
     height: 100vh;
 }
 
@@ -15,15 +14,18 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
+
+.flex{
+    display: flex;
+}
 /*  */
 
-/* header */
+/* cabeçalho */
 header{
     padding: 0px;
-
 }
 
-header > .interface{
+header >.interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,6 +47,7 @@ header nav ul{
     list-style-type: none;
     
 }
+
 header nav li{
     display: inline-block;
     padding: 0 40px;
@@ -61,11 +64,7 @@ header .meu-contato button{
     cursor: pointer;
     
 }
-header .meu-contato button{
-    box-shadow: 0px 0px 0px #00ff08;
-}
-.logo{
-    max-width: 200px;
-    max-height: 100px;
+header .meu-contato button:hover{
+    box-shadow: 0px 0px 8px #00ff08;
 }
 /*  */
