@@ -89,6 +89,21 @@ header .meu-contato button:hover{
     }
 }
 
+.especialidades-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas com tamanhos iguais */
+    grid-gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+
+}
+.especialidades-img img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    height: auto;
+
+}
 
 /*  */
 
@@ -102,4 +117,5 @@ header .meu-contato button:hover{
     margin-left: 60px;
     margin-top: -450px;
     text-align: center;
+    font-size: 23px;
 }
