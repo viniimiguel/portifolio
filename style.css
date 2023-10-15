@@ -95,6 +95,8 @@ header .meu-contato button:hover{
     grid-gap: 10px;
     overflow-x: auto;
     white-space: nowrap;
+    animation: balanco 2s ease-in-out infinite;
+    filter: brightness(1.2) drop-shadow(0 0 5px #00ff08);
 
 }
 .especialidades-img img{
