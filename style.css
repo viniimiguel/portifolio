@@ -139,3 +139,15 @@ header .meu-contato button:hover{
     font-style: italic;
     text-decoration: underline;
 }
+
+.projetos{
+    color: white;
+    display: block;
+    text-align: center;
+}
+.projetos .projeto-item {
+    display: block;
+    text-align: center;
+}
+
+/*  */
