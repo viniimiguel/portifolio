@@ -50,7 +50,10 @@ header nav ul{
 header nav li{
     display: inline-block;
     padding: 0 40px;
+}
 
+header nav li img{
+    background-color: black;
 }
 
 header .meu-contato button{
@@ -63,6 +66,10 @@ header .meu-contato button{
     cursor: pointer;
     
 }
+.svg{
+    margin-left: 30px;
+}
+
 header .meu-contato button:hover{
     box-shadow: 0px 0px 8px #00ff08;
 }
@@ -120,4 +127,15 @@ header .meu-contato button:hover{
     margin-top: -450px;
     text-align: center;
     font-size: 23px;
+}
+
+.especialidades-text{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    color: #00ff08;
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: underline;
 }
