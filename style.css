@@ -158,5 +158,8 @@ header .meu-contato button:hover{
     text-decoration: underline;
     font-style: italic;
 }
+.projetos p{
+    margin: 20px;
+}
 
 /*  */
