@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: black;
+    background-color: black;
     height: 100vh;
 }
 
@@ -23,12 +23,14 @@ body{
 /* cabeçalho */
 header{
     padding: 0px;
+    width: 100%;
 }
 
 header >.interface{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 8px;
 }
 
 header a{
@@ -76,12 +78,21 @@ header .meu-contato button:hover{
 .banner{
     margin-top: -30px;
 }
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+.menu nav{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
 /*  */
 
 /* main animation */
 
 .banner img{
-    display: block;
+    width: 100%;
     margin: 0 0 0 auto;
     animation: balanco 2s ease-in-out infinite;
     filter: brightness(1.2) drop-shadow(0 0 5px #00ff08);
@@ -92,7 +103,7 @@ header .meu-contato button:hover{
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-50px); /* Ajuste o valor desejado para a altura do balanço */
+        transform: translateY(-10px); /* Ajuste o valor desejado para a altura do balanço */
     }
 }
 
@@ -120,14 +131,19 @@ header .meu-contato button:hover{
 
 .banner-text{
     color: white;
-    float: left;
-    width: 50%;
-    vertical-align: top;
-    margin-left: 60px;
-    margin-top: -450px;
     text-align: center;
     font-size: 23px;
 }
+
+.container-banner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+
 
 .especialidades-text{
     display: flex;
@@ -143,26 +159,105 @@ header .meu-contato button:hover{
 /*  */
 
 /* main projetos */
+.container-cards-project{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 12px;
+    column-gap: 16px;
+    padding: 32px;
+    
+}
 
-.projetos{
+.container-project{
+    width: 360px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.container-project img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.project-text{
     color: white;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
     text-align: center;
+    gap: 12px;
+    text-decoration: none;
+    
 }
-.projetos .projeto-item {
-    display: block;
-    text-align: center;
+.project-text a{
+    text-decoration: none;
+    
 }
-.projetos h1{
+
+.container-button-github{
+    display: flex;
+    cursor: pointer;
+    gap: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
     font-size: 40px;
-    text-decoration: underline;
-    font-style: italic;
-}
-.projetos p{
-    margin: 20px;
+    background-color:#00ff08;
+    
 }
 
+.container-button-github:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    
+}
+.container-button-github img{
+    width: 30px;
+    height: 30px;
+}
+.container-button-github button{
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    
+    
+}
+.container-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 /*  */
-
-
+footer{
+    padding: 32px;
+}
 /* responsividade */
+@media (max-width: 768px){
+    .container-cards-project{
+        grid-template-columns: 1fr;
+    }
+    .container-banner{
+        flex-direction: column;
+    }
+    .text-speciality{
+        display: none;
+        background-color: black;
+    }
+    
+}
+
+@media (min-width: 768px){
+    .banner-text{
+        width: 50%;
+    }
+    
+}
+
+
+
