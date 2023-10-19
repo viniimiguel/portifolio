@@ -18,6 +18,9 @@ body{
 .flex{
     display: flex;
 }
+li{
+    list-style-type: none;
+}
 /*  */
 
 /* cabeçalho */
