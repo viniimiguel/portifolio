@@ -103,7 +103,7 @@ header .meu-contato button:hover{
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px); /* Ajuste o valor desejado para a altura do balanço */
+        transform: translateY(-15px); /* Ajuste o valor desejado para a altura do balanço */
     }
 }
 
