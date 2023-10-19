@@ -172,29 +172,18 @@ header .meu-contato button:hover{
     width: 360px;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 
 }
 
 .container-project img{
     width: 100%;
     object-fit: cover;
-    
 }
 
-.project-text{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    text-align: center;
-    gap: 12px;
-    text-decoration: none;
-    
-}
-.project-text a{
-    text-decoration: none;
-    
-}
 
 .container-button-github{
     display: flex;
@@ -206,7 +195,7 @@ header .meu-contato button:hover{
     justify-content: center;
     font-size: 40px;
     background-color:#00ff08;
-    
+    align-self: flex-end;
 }
 
 .container-button-github:hover{
@@ -227,6 +216,20 @@ header .meu-contato button:hover{
     
     
 }
+.project-text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    text-align: center;
+    gap: 12px;
+    text-decoration: none;
+    
+}
+.project-text a{
+    text-decoration: none;
+    
+}
 .container-cards{
     display: flex;
     align-items: center;
@@ -237,6 +240,7 @@ header .meu-contato button:hover{
 footer{
     padding: 32px;
 }
+
 /* responsividade */
 @media (max-width: 768px){
     .container-cards-project{
